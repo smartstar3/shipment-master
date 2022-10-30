@@ -1,0 +1,25 @@
+[
+  {
+    "scope": "https://www.shipontrac.net:443",
+    "method": "POST",
+    "path": "/OnTracWebServices/OnTracServices.svc/V4/[REDACTED]/shipments?pw=[REDACTED]",
+    "body": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<OnTracShipmentRequest>\n  <Shipments>\n    <Shipment>\n      <UID>62457395</UID>\n      <shipper>\n        <Name>Andrew Tribone</Name>\n        <Addr1>1854 S 5350 W</Addr1>\n        <City>Salt Lake</City>\n        <State>UT</State>\n        <Zip>84104</Zip>\n        <Contact/>\n        <Phone>1-800-866-0286</Phone>\n      </shipper>\n      <consignee>\n        <Name>Jamila Small</Name>\n        <Addr1>174 Riverdale Ave</Addr1>\n        <Addr2>F</Addr2>\n        <Addr3/>\n        <City>Brooklyn</City>\n        <State>NY</State>\n        <Zip>99215</Zip>\n        <Contact/>\n        <Phone>347-691-8291</Phone>\n      </consignee>\n      <Service>C</Service>\n      <SignatureRequired>false</SignatureRequired>\n      <Residential>true</Residential>\n      <SaturdayDel>false</SaturdayDel>\n      <Declared>99.99</Declared>\n      <COD>0</COD>\n      <CODType>NONE</CODType>\n      <Weight>0.01875</Weight>\n      <BillTo>0</BillTo>\n      <Instructions>Ring Bell</Instructions>\n      <Reference>62457395</Reference>\n      <Reference2>00008872784502755082</Reference2>\n      <Reference3/>\n      <Tracking/>\n      <DIM>\n        <Length>16</Length>\n        <Width>12</Width>\n        <Height>2</Height>\n      </DIM>\n      <LabelType>9</LabelType>\n      <ShipEmail/>\n      <DelEmail/>\n      <ShipDate>2021-08-04</ShipDate>\n      <CargoType>0</CargoType>\n    </Shipment>\n  </Shipments>\n</OnTracShipmentRequest>",
+    "status": 200,
+    "response": "<OnTracShipmentResponse><Error></Error><Shipments><Shipment><UID>62457395</UID><Tracking>D10012590085205</Tracking><Error></Error><TransitDays>3</TransitDays><ExpectedDeliveryDate>20210809</ExpectedDeliveryDate><CommitTime>17:00:00</CommitTime><ServiceChrg>4.49</ServiceChrg><ServiceChargeDetails><BaseCharge>3.99</BaseCharge><PoundsCharge>0</PoundsCharge><CODCharge>0</CODCharge><DeclaredCharge>0</DeclaredCharge><AdditionalCharges>0.5</AdditionalCharges><AdditionalChargesDetails><AdditionalCharge><Description>RESIDENTIAL DELIVERY</Description><Value>0.50</Value></AdditionalCharge></AdditionalChargesDetails><SaturdayCharge>0</SaturdayCharge></ServiceChargeDetails><RateZone>4</RateZone><BilledWeight>2</BilledWeight><FuelChrg>0.19</FuelChrg><TotalChrg>4.68</TotalChrg><TariffChrg>16.68</TariffChrg><Label>^XA^LH0,10^BY3^FO515,35^BCN,150,N,N,Y^FD&gt;;00199215^FS^FO40,10^AQN,20,30^FDANDREW TRIBONE^FS^FO40,35^AQN,20,30^FD1854 S 5350 W^FS^FO40,60^AQN,20,30^FDSALT LAKE, UT 84104^FS^FO40,110^AQN,20,30^FD8/4/2021^FS^FO40,160^ARN,20,30^FD^FS^FO40,190^ARN,20,30^FDJAMILA SMALL^FS^FO40,220^ARN,20,30^FD174 RIVERDALE AVE^FS^FO40,250^ARN,20,30^FDF^FS^FO40,280^ARN,20,30^FD^FS^FO40,310^ATN,30,50^FDBROOKLYN, NY 99215^FS^FO20,350^GB775,1,3,B,0^FS^BY3^FO60,380^B7N,5,5,10,,N^FH\\^FD[)&gt;\\1E01\\1D0299215\\1D840\\1D001\\1DD10012590085205\\1DEMSY\\1D215135\\1D216\\1D\\1D1/1\\1D0.01875LB\\1DN\\1D174 RIVERDALE AVE\\1DBROOKLYN\\1DNY\\1D\\1E06\\1D3Z01\\1D11ZJAMILA SMALL\\1D12Z3476918291\\1D14ZF\\1D15Z84104\\1D20Z0\\1C\\1C99.99\\1D21Z0\\1D22Z0\\1D24Z0\\1D9K62457395\\1D\\1E\\04^FS^FO20,560^GB775,1,3,B,0^FS^FO40,630^ASN,20,30^FD62457395^FS^FO40,665^ASN,20,30^FD00008872784502755082^FS^FO20,700^GB775,1,3,B,0^FS^FO30,710^GB276,75,45^FS^FO40,710^FR^AVN,50,60^FR^FDGROUND^FS^FO275,800^ASN,20,30^FDLBS: 0.02^FS^FO640,710^ATN,30,30^FDOnTrac^FS^FO650,740^AQN,20,20^FDontrac.com^FS^FO640,760^AQN,20,20^FD800.334.5000^FS^FO635,790^GB135,130,75^FS^FO640,810^FR^A0N,125,65^FDGEG^FS^FO20,930^GB775,1,3,B,0^FS^BY4,3^FO140,955^BCN,200,N,N,Y,A^FDD10012590085205^FS^FO290,1160^ARN,20,30^FDD10012590085205^FS^XZ</Label><SortCode>GEG</SortCode></Shipment></Shipments></OnTracShipmentResponse>",
+    "rawHeaders": [
+      "Content-Length",
+      "2135",
+      "Content-Type",
+      "application/xml; charset=utf-8",
+      "Server",
+      "Microsoft-IIS/7.5",
+      "X-Powered-By",
+      "ASP.NET",
+      "Date",
+      "Wed, 04 Aug 2021 19:00:15 GMT",
+      "Connection",
+      "close"
+    ],
+    "responseIsBinary": false
+  }
+]

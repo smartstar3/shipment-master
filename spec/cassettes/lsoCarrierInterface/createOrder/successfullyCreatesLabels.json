@@ -1,0 +1,29 @@
+[
+  {
+    "scope": "https://services.lso.com:443",
+    "method": "POST",
+    "path": "/partnershippingservices/v1_5/PrintingService.asmx?SOAP",
+    "body": "<?xml version=\"1.0\" encoding=\"UTF-8\"?><Envelope xmlns=\"http://schemas.xmlsoap.org/soap/envelope/\"><Header/><Body><PrintAirbill xmlns=\"https://services.lso.com/PrintingService/v1_6\"><request><AuthenticationInfo><Username>onelive</Username><Password>[REDACTED]</Password></AuthenticationInfo><Customer><AccountNumber>[REDACTED]</AccountNumber></Customer><ServiceType>GroundBasic</ServiceType><FromName>undefined</FromName><FromPhone>4152948888</FromPhone><FromCompany>OneLive</FromCompany><FromAddress1>1100 E. HOWARD LANE</FromAddress1><FromZipCode>78753</FromZipCode><FromCity>Austin</FromCity><FromState>TX</FromState><FromCountry>UnitedStates</FromCountry><ToName>James Crow</ToName><ToPhone>4152948888</ToPhone><ToCompany>OneLive</ToCompany><ToAddress1>9600 Escarpment Blvd</ToAddress1><ToAddress2>#745-259</ToAddress2><ToZipCode>78749</ToZipCode><ToCity>Austin</ToCity><ToState>TX</ToState><ToCountry>UnitedStates</ToCountry><Length>5</Length><Width>6</Width><Height>4</Height><Weight>0.625</Weight><LsoSuppliesUsed>false</LsoSuppliesUsed><OTT>false</OTT><AddSaturdayService>false</AddSaturdayService><EncodeLabel>true</EncodeLabel><Format>ZPL</Format><LabelSize>s4x6_5</LabelSize><HighRes>false</HighRes><UseSimple>false</UseSimple><DeliveryNotification>false</DeliveryNotification><SignatureRequirement>None</SignatureRequirement><SignatureRelease>false</SignatureRelease></request></PrintAirbill></Body></Envelope>",
+    "status": 200,
+    "response": "<?xml version=\"1.0\" encoding=\"utf-8\"?><soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\"><soap:Body><PrintAirbillResponse xmlns=\"https://services.lso.com/PrintingService/v1_6\"><PrintAirbillResult><ChargesAndFees><PrintingServiceCharge><Description>Estimated Base Price</Description><Amount>8.76</Amount></PrintingServiceCharge><PrintingServiceCharge><Description>Estimated Fuel Charges</Description><Amount>0.28</Amount></PrintingServiceCharge></ChargesAndFees><EstimatedTotalCharge>8.17</EstimatedTotalCharge><LabelsData><StandardLabelData><AirbillNo>ZY03S1WN</AirbillNo><ServiceDescription>LSO Ground</ServiceDescription><ServiceType>GroundBasic</ServiceType><SortCode>AUS</SortCode><Piece>1</Piece><Pieces>1</Pieces><FromName>UNDEFINED</FromName><FromPhone>4152948888</FromPhone><FromCompany>ONELIVE</FromCompany><FromAddress1>1100 E. HOWARD LANE</FromAddress1><FromAddress2 /><FromZipCode>78753</FromZipCode><FromCity>AUSTIN</FromCity><FromState>TX</FromState><FromCountry>UnitedStates</FromCountry><ToName>JAMES CROW</ToName><ToPhone>4152948888</ToPhone><ToCompany>ONELIVE</ToCompany><ToAddress1>9600 ESCARPMENT BLVD</ToAddress1><ToAddress2>#745-259</ToAddress2><ToZipCode>78749</ToZipCode><ToCity>AUSTIN</ToCity><ToState>TX</ToState><ToCountry>UnitedStates</ToCountry><ResidentialDelivery>false</ResidentialDelivery><Length>5</Length><Width>6</Width><Height>4</Height><Weight>1</Weight><LsoSuppliesUsed>false</LsoSuppliesUsed><OTT>false</OTT><DeclaredValue>100</DeclaredValue><BillingRef /><BillingRef2 /><BillingRef3 /><BillingRef4 /><SignatureRequirement>None</SignatureRequirement></StandardLabelData></LabelsData><Images><LabelImage><LabelType>ZPL</LabelType><Base64data>XlhBDQpeRlQxNTAsNTReQTBOLDI4LDI4XkZIXF5GRExTTw0KXkZTXkZUMjIwLDU0XkEwTiwyOCwyOF5GSFxeRkQxLTgwMC04MDAtODk4NA0KXkZTXkZUNDcwLDU0XkEwTiwyOCwyOF5GSFxeRkR3d3cubHNvLmNvbQ0KXkZTXkZUMzQyLDgxXkEwTiwxNywxNl5GSFxeRkRUbzoNCl5GU15GVDM1MCwxMjleQTBOLDQwLDMyXkZIXF5GREpBTUVTIENST1cNCl5GU15GVDM1MCwxNzVeQTBOLDQwLDMyXkZIXF5GRE9ORUxJVkUNCl5GU15GVDM1MCwyMjFeQTBOLDQwLDMyXkZIXF5GRDk2MDAgRVNDQVJQTUVOVCBCTFZEDQpeRlNeRlQzNTAsMjY3XkEwTiw0MCwzMl5GSFxeRkQjNzQ1LTI1OQ0KXkZTXkZUMzUwLDMxM15BME4sNDAsMzJeRkhcXkZEDQpeRlNeRlQzNTAsMzU5XkEwTiw0MCwzMl5GSFxeRkRBVVNUSU4sIFRYIDc4NzQ5DQpeRlNeRlQzNTAsNDA1XkEwTiw0MCwzMl5GSFxeRkQ0MTUyOTQ4ODg4DQpeRlNeRlQxNiw4MV5BME4sMTcsMTZeRkhcXkZERnJvbToNCl5GU15GVDE2LDExMV5BME4sMjMsMjReRkhcXkZEVU5ERUZJTkVEDQpeRlNeRlQxNiwxMzVeQTBOLDIzLDI0XkZIXF5GRE9ORUxJVkUNCl5GU15GVDE2LDE1OV5BME4sMjMsMjReRkhcXkZEMTEwMCBFLiBIT1dBUkQgTEFORQ0KXkZTXkZUMTYsMTgzXkEwTiwyMywyNF5GSFxeRkRBVVNUSU4sIFRYIDc4NzUzDQpeRlNeRlQxNiwyMDdeQTBOLDIzLDI0XkZIXF5GRDQxNTI5NDg4ODgNCl5GU15GVDIxLDM3OF5BME4sMjMsMjFeRkhcXkZEUmVmOiANCl5GU15GVDUyNyw0NDZeQTBOLDIzLDI0XkZIXF5GRFBpZWNlczogMSBvZiAxDQpeRlNeRlQ1MjcsNDgyXkEwTiwyMywyNF5GSFxeRkRQcmludGVkIERhdGU6IDIvMTUvMjAyMQ0KXkZTXkZUMjEsNDcwXkEwTiwyMywyNF5GSFxeRkRXZWlnaHQ6IDENCl5GU15CWTUsMywxNjBeRlQ5NCw3MDVeQkNOLCxZLE5eRkRaWTAzUzFXTg0KXkZTXkZPMjEsNzcwXkdCNzYzLDAsOA0KXkZTXkZUMzAsODQxXkEwTiw2OCw2N15GSFxeRkRXDQpeRlNeRk85MCw3NzBeR0IxMzAsODUsODUNCl5GU15GVDkwLDgzOF5BME4sNjgsNjdeRlJeRkhcXkZEQVVTDQpeRlNeRlQyNjAsODM4XkEwTiw1Niw1NV5GSFxeRkRMU08gR3JvdW5kDQpeRlNeRk8yMSw4NjdeR0I3NjMsMCw4DQpeRlNeRlQyMyw5MDBeQTBOLDE3LDE2XkZIXF5GRFNwZWNpYWwgSW5zdHJ1Y3Rpb25zOg0KXkZTXkZUMjMsOTE1XkEwTiwxNywxNl5GSFxeRkQNCl5GU15GVDIzLDk0MF5BME4sMjgsMjheRkheRkQNCl5GU15GVDIzLDk1NVxeRkQNCl5GU15QUTEsMCwxLFleWFogDQoNCg==</Base64data></LabelImage></Images></PrintAirbillResult></PrintAirbillResponse></soap:Body></soap:Envelope>",
+    "rawHeaders": [
+      "Server",
+      "nginx/1.19.1",
+      "Date",
+      "Mon, 15 Feb 2021 19:44:25 GMT",
+      "Content-Type",
+      "text/xml; charset=utf-8",
+      "Content-Length",
+      "3590",
+      "Connection",
+      "close",
+      "Cache-Control",
+      "private, max-age=0",
+      "X-AspNet-Version",
+      "4.0.30319",
+      "X-Powered-By",
+      "ASP.NET"
+    ],
+    "responseIsBinary": false
+  }
+]

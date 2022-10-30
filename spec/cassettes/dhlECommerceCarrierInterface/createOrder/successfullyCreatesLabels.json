@@ -1,0 +1,73 @@
+[
+  {
+    "scope": "https://api-sandbox.dhlecs.com:443",
+    "method": "POST",
+    "path": "/shipping/v4/label?format=ZPL",
+    "body": "{\"pickup\":\"5351358\",\"distributionCenter\":\"USRDU1\",\"orderedProductId\":\"GND\",\"consigneeAddress\":{\"name\":\"James Crow\",\"address1\":\"9600 Escarpment Blvd\",\"address2\":\"#745-259\",\"city\":\"Austin\",\"state\":\"TX\",\"postalCode\":\"78749\",\"country\":\"US\",\"phone\":\"4152948888\"},\"returnAddress\":{\"companyName\":\"OneLiveX\",\"address1\":\"7000 BURLESON RD\",\"address2\":\"STE A-100\",\"city\":\"AUSTIN\",\"state\":\"TX\",\"postalCode\":\"78744-3214\",\"country\":\"US\",\"phone\":\"512-371-6924\"},\"packageDetail\":{\"packageId\":\"982856d6fdd3-49d5-8cc7-cc80f1a\",\"packageDescription\":\"Things in a box.\",\"packageReference\":\"RDU\",\"weight\":{\"value\":10,\"unitOfMeasure\":\"OZ\"}}}",
+    "status": 200,
+    "response": {
+      "timestamp": "2021-01-27T23:26:13.410Z",
+      "pickup": "5351358",
+      "distributionCenter": "USRDU1",
+      "orderedProductId": "GND",
+      "labels": [
+        {
+          "createdOn": "2021-01-27T23:26:13.000Z",
+          "packageId": "982856D6FDD3-49D5-8CC7-CC80F1A",
+          "dhlPackageId": "4342701140046299",
+          "trackingId": "420787499374869903500268917066",
+          "labelData": "^XA^LH0,30\\n\n^FO395,0^GB310,0,3^FS\\n\n^FO395,0^GB0,150,3^FS\\n\n^FO705,0^GB0,153,3^FS\\n\n^FO395,150^GB310,0,3^FS\\n\n^FO560,30^A0N,20,20^FDUS Postage Paid^FS\\n\n^FO580,52^A0N,20,20^FDGlobal Mail^FS\\n\n^FO610,74^A0N,20,20^FDeVS^FS\\n\n^FO555,0^GB0,100,3^FS\\n\n^FO450,0^GB0,100,3^FS\\n\n^FO395,100^GB310,0,3^FS\\n\n^FO575,100^GB0,50,3^FS\\n\n^FO640,100^GB0,25,3^FS\\n\n^FO575,125^GB130,0,3^FS\\n\n^FO30,0^A0N,24,25^FDPS LIGHTWEIGHT^FS\\n\n^FO20,30^A0N,25,30^FDTime Sensitive Material^FS\\n\n^FO70,55^A0N,24,22^FD^FS\\n\n^FO430,160^A0N,24,22^FD^FS\\n\n^FO480,38^A0N,48,48^FD39^FS\\n\n^FO480,110^A0N,48,48^FDN67^FS\\n\n^FO610,130^A0N,20,30^FD78749^FS\\n\n^FO590,105^A0N,20,20^FDIAH^FS\\n\n^FO650,105^A0N,20,20^FD2-7^FS\\n\n^FO30,180^BY2^B2N,40,N,N,N^FD4342701140046299^FS\\n\n^FO30,235^A0N,22,22^FDDHLGM#:4342701140046299^FS\\n\n^FO30,255^GB770,0,3^FS\\n\n^FO50,270^A0N,24,24^FD^FS\\n\n^FO50,295^A0N,24,24^FDOneLiveX^FS\\n\n^FO50,320^A0N,24,24^FD7000 BURLESON RD^FS\\n\n^FO50,345^A0N,24,24^FDSTE A-100^FS\\n\n^FO50,370^A0N,24,24^FDAUSTIN  TX  78744-3214^FS\\n\n^FO200,540^A0N,30,30^FDJames Crow^FS\\n\n^FO200,570^A0N,30,30^FD9600 Escarpment Blvd^FS\\n\n^FO200,600^A0N,30,30^FD#745-259^FS\\n\n^FO200,630^A0N,30,30^FDAUSTIN  TX  78749^FS\\n\n^FS\\n\n^FO200,660^A0N,30,30^FD^FS\\n\n^FS\\n^FO20,700^GB770,0,10^FS\\n\n^FO160,730^A0N,44,44^FDUSPS TRACKING # eVS^FS\\n\n^FO40,815^BY3\\n^BCN,160,N^FD>;>842078749>;>89374869903500268917066>;^FS\\n\n^FO180,1015^A0N,32,32^FD9374 8699 0350 0268 9170 66^FS\\n\n^FO20,1065^GB770,0,10^FS\\n\n^FO230,1100^BY2^B2N,40,N,N,N^FD982856D6FDD3-49D5-8CC7-CC80F1A^FS\\n\n^FO250,1150^A0N,22,22^FDRDU 982856D6FDD3-49D5-8CC7-CC80F1A^FS\\n^FO400,10^A0R,42,42^FDGRD^FS\n^PQ1^XZ",
+          "encodeType": "PLAIN",
+          "format": "ZPL",
+          "link": "https://api-sandbox.dhlecs.com/shipping/v4/label/5351358?packageId=982856D6FDD3-49D5-8CC7-CC80F1A",
+          "labelDetail": {
+            "serviceLevel": "GRD",
+            "outboundSortCode": "39",
+            "sortingSetupVersion": "7",
+            "inboundSortCode": "N67",
+            "intendedReceivingFacility": "IAH",
+            "mailBanner": "PS LIGHTWEIGHT",
+            "customsDetailsProvided": false
+          }
+        }
+      ]
+    },
+    "rawHeaders": [
+      "Date",
+      "Wed, 27 Jan 2021 23:26:13 GMT",
+      "Content-Type",
+      "application/json",
+      "Content-Length",
+      "2358",
+      "Connection",
+      "close",
+      "node-id",
+      "FujLF6x6Yb0nGBlfQ4RJeSa2awyvYd54",
+      "X-Content-Type-Options",
+      "nosniff",
+      "X-XSS-Protection",
+      "1; mode=block",
+      "Cache-Control",
+      "no-cache, no-store, max-age=0, must-revalidate",
+      "Pragma",
+      "no-cache",
+      "Expires",
+      "0",
+      "Strict-Transport-Security",
+      "max-age=31536000 ; includeSubDomains",
+      "X-Frame-Options",
+      "DENY",
+      "Correlation-Id",
+      "8fe667bf-66fa-4c7c-820b-f308b2e78534",
+      "Access-Control-Allow-Origin",
+      "*",
+      "Access-Control-Allow-Headers",
+      "Authorization,Accept,Content-Type,X-Requested-With",
+      "Access-Control-Max-Age",
+      "86400",
+      "Access-Control-Allow-Methods",
+      "GET,POST,DELETE,OPTIONS,HEAD"
+    ],
+    "responseIsBinary": false
+  }
+]

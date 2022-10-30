@@ -1,0 +1,40 @@
+[
+  {
+    "scope": "https://api.parcelprep.com:443",
+    "method": "POST",
+    "path": "/api/Package/CreatePackage/CreatePackage",
+    "body": "{\"clientConsolidationFacility\":\"XAMERICANFORKUT\",\"apiRevision\":\"1\",\"outputLabelType\":\"ZPL\",\"fromName\":\"Andrew Tribone\",\"fromFirm\":null,\"fromAddressLine1\":\"12588 Florence Ave.\",\"fromAddressLine2\":null,\"fromCity\":\"Santa Fe Springs\",\"fromState\":\"CA\",\"fromZip5\":\"90670\",\"fromZip4\":null,\"fromPhone\":\"1-800-866-0286\",\"toName\":\"Jamila Small\",\"toFirm\":null,\"toAddressLine1\":\"174 Riverdale Ave\",\"toAddressLine2\":\"F\",\"toCity\":\"Brooklyn\",\"toState\":\"NY\",\"toZip5\":\"75243\",\"toZip4\":null,\"toPhone\":\"347-691-8291\",\"isPoBox\":false,\"isOrmd\":false,\"machinable\":true,\"addressServiceRequested\":false,\"processingCategory\":3,\"weightInOunces\":\"0.3\",\"businessRuleType\":\"CLIENT\",\"carrier\":\"USPS\",\"serviceType\":\"PRIORITY_MAIL\",\"width\":\"12\",\"length\":\"16\",\"height\":\"2\",\"girth\":null,\"priceOptions\":null,\"insuredAmount\":null,\"shipDate\":\"20210730\",\"customerReferenceNumber\":\"62457395\",\"customerReferenceNumber2\":\"62457395\",\"carrierExtraServices\":[\"910\"],\"addressHygieneType\":null}",
+    "status": 200,
+    "response": {
+      "packageId": "ac9f081b-0925-4e9a-98ab-41e062b003fc",
+      "trackingNumber": "4207524392055902828844000000003809",
+      "carrier": "USPS",
+      "serviceType": "PRIORITY_MAIL",
+      "customerReferenceNumber": "62457395",
+      "base64": "XlhBXkxIMTAsMTBeTEwxMjAwXlBXODAwXlBPTl5GWCBlbnRpcmUgbGFiZWwgYm94IFVTUFMgU2VydmljZSBUb3AgbGluZV5GTzAsMjAwXkdCNzgwLDIsNV5GU15GWCBVU1BTIFNlcnZpY2UgQm90dG9tIExpbmVeRk8yMCwyMTVeQTBOLDUwLDYwXkZSXkZXTl5GSF5GRCAgICAgICBVU1BTIFBSSU9SSVRZIE1BSUxeRlNeRk8wLDI2MF5HQjc4MCwyLDVeRlNeRlggVVNQUyBTZXJ2aWNlIExldHRlciBCb3heRk8wLDBeR0IyMDAsMjA1LDVeRlNeRlggTUFSSyBMRVRURVIgRjtQO0UgYWNjb3JkaW5nbHkgXkZPNDAsMjVeQTBOLDIwMCwyMjBeRlJeRldOXkZIXkZEUF5GU15GWCBVU1BTIEluZGljaWFeRk81MzgsMzBeR0IyMDAsMTUwLDJeRlNeRk81NTAsNDVeQWROLDE1LDEwXkZSXkZXTl5GSF5GRCBeRlNeRk81NTAsNzBeQWROLDE1LDEwXkZSXkZXTl5GSF5GRFVTIFBPU1RBR0UgUEFJRF5GU15GTzU1MCw5NV5BZE4sMTUsMTBeRlJeRldOXkZIXkZEIE9ORUxJVkUgTUVESUFeRlNeRk81NTAsMTIwXkFkTiwxNSwxMF5GUl5GV05eRkheRkQgICAgICBlVlNeRlNeRk81NTAsMTQ1XkFkTiwxNSwxMF5GUl5GV05eRkheRkQgXkZTXkZYIFBBUkNFTFBSRVAuQ09NIFRBR15GTzc1MCwxMDAwXkFkMCwxMCwxMF5GV0JeRkRQQVJDRUxQUkVQLkNPTV5GU15GWCByZXR1cm4gYWRkcmVzcyBpbmZvXkZPMjAsMjkwXkFkMCwyMCwxMF5GV05eRkRBbmRyZXcgVHJpYm9uZV5GU15GTzIwLDMxNV5BZDAsMjAsMTBeRldOXkZEXkZTXkZPMjAsMzQwXkFkMCwyMCwxMF5GV05eRkQxMjU4OCBGbG9yZW5jZSBBdmUuXkZTXkZPMjAsMzY1XkFkMCwyMCwxMF5GV05eRkReRlNeRk8yMCwzOTBeQWQwLDIwLDEwXkZXTl5GRFNhbnRhIEZlIFNwcmluZ3MgQ0EgOTA2NzBeRlNeRk8yMCw0MTVeQWQwLDIwLDEwXkZXTl5GRDEtODAwLTg2Ni0wMjg2XkZTXkZYIHNoaXAgZGF0ZSBhbmQgd2VpZ2h0XkZPNDUwLDI5MF5BZDAsMjAsMTBeRldOXkZEU2hpcCBEYXRlOl5GU15GTzYwMCwyOTBeQWQwLDIwLDEwXkZXTl5GRDIwMjEwNzMwXkZTXkZPNDUwLDMxNV5BZDAsMjAsMTBeRldOXkZEV2VpZ2h0Ol5GU15GTzYwMCwzMTVeQWQwLDIwLDEwXkZXTl5GRDAuMDE4NzUgbGJzXkZTXkZYIHNoaXAgdG8gYWRkcmVzcyBpbmZvXkZPMTI1LDQ3NV5BZE4sMzAsMTVeRldOXkZESmFtaWxhIFNtYWxsXkZTXkZPMTI1LDUxMF5BZE4sMzAsMTVeRldOXkZEXkZTXkZPMTI1LDU0NV5BZE4sMzAsMTVeRldOXkZEMTc0IFJpdmVyZGFsZSBBdmVeRlNeRk8xMjUsNTgwXkFkTiwzMCwxNV5GV05eRkRGXkZTXkZPMTI1LDYxNV5BZE4sMzAsMTVeRldOXkZEQnJvb2tseW4gTlkgNzUyNDNeRlNeRlggVVNQUyBlVlMgYmFyY29kZV5GTzAsNjc1XkdCNzgwLDIsMTJeRlNeRk8zMCw2OTheQTBOLDM1LDQ1XkZSXkZXTl5GSF5GRCAgICAgICAgICAgVVNQUyBUUkFDS0lORyAjIGVWU15GU15GTzI1LDc1MF5CWTMsMy4wLDEwXkJDTiwxNTUsTixOLE4sRF5GRCg0MjApNzUyNDM+OCg5MikwNTU5MDI4Mjg4NDQwMDAwMDAwMDM4MDleRlNeRk8xMTAsOTMwXkEwTiwzMCw0MF5GUl5GV05eRkheRkQ5MjA1IDU5MDIgODI4OCA0NDAwIDAwMDAgMDAzOCAwOV5GU15GTzAsOTc1XkdCNzgwLDIsMTJeRlNeRlggQ29uc29saWRhdGlvbiBCSU4gaW5mb3JtYXRpb25eRk8yMCwxMTMwXkEwTiw3MCw2MF5GUl5GV05eRkheRkRPMDAwMDFeRlNeRk81NTAsMTAwMF5CUU4sMiw4LFEsMV5GRE8wMDAwMV5GU15YWg==",
+      "isSuccessful": true,
+      "message": "SUCCESS"
+    },
+    "rawHeaders": [
+      "Content-Length",
+      "2518",
+      "Content-Type",
+      "application/json; charset=utf-8",
+      "Set-Cookie",
+      "ARRAffinity=2df1de8bc8bfee666d25e539e41675afdd258ee3863f28a8b75d5ff70fc6d2c3;Path=/;HttpOnly;Secure;Domain=pp-pro-appservice-ea-api.azurewebsites.net",
+      "Set-Cookie",
+      "ARRAffinitySameSite=2df1de8bc8bfee666d25e539e41675afdd258ee3863f28a8b75d5ff70fc6d2c3;Path=/;HttpOnly;SameSite=None;Secure;Domain=pp-pro-appservice-ea-api.azurewebsites.net",
+      "X-Powered-By",
+      "ASP.NET",
+      "X-Cache",
+      "CONFIG_NOCACHE",
+      "X-Azure-Ref",
+      "06V0EYQAAAABQ2Gp/SDPSQZ/Vf8QxDZtMU0pDRURHRTA1MjAANjNmODY2MDUtZDhjNi00OGM3LWFmNGEtZDc0YTc0ZDcxYTg1",
+      "Date",
+      "Fri, 30 Jul 2021 20:15:37 GMT",
+      "Connection",
+      "close"
+    ],
+    "responseIsBinary": false
+  }
+]

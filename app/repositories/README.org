@@ -1,0 +1,13 @@
+* Repository Concepts
+
+A repository module (repo) contains operates on one or more models, providing application level data store/retrieve functionality. The typical function of the repository modules is that of a GraphQL resolver. Many of these functions are called directly from the GraphQL layer. However, the repo set should not be constrained to only that function. These modules provide any and all data abstraction above the model layer.
+
+- Purpose :: A Repo module exports data query functions that directly support the application/presentation layer. Note that the app layer may also call into the model directly but most likely will utilize a repo function for more complex data operations that the model does not directly support.
+
+- Scope :: A repo module has knowledge of a set of DB models and/or other data-store or services. It manages each of these as needed to provide query responses to an application-level request.
+
+- Schema :: A repo module does not enforce a schema but does accept formated data from the API and performs normalized read/write operations via this underlying model layer.
+
+- Function :: A repo module provides the full set of application-level data query functions (e.g., GraphQL resolvers). For instance, if an application query requires the join/association of multiple collection or other data sources, it is the function of the repo layer to accept this request, de-compose the query into its elements and execute, then collect and combine the results and provide back to the calling application. It is OK of the repo function does complex database actions involving more than one collection, such as a $lookup function to "join" data.
+
+If the query on a model cannot be done via a "naked" findOne( args ) or find( args ) call (that is what dbget/dbset or dbgets does) then it is up to the repository to manage the query directly. 

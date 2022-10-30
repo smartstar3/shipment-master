@@ -1,0 +1,74 @@
+[
+  {
+    "scope": "https://expush.narvar.qa:443",
+    "method": "POST",
+    "path": "/qa01/olx",
+    "body": "{\"id\":\"68856b2f-a2e2-4171-bab8-44881ab1e29b\",\"identifier\":\"NARVARTOKEN\",\"retailerMoniker\":\"builtbar\",\"trackingNo\":\"7da76c38-f27c-4c39-b941-0972810e4dec\",\"carrier\":\"OLX\",\"statusCode\":\"INTRANSIT\",\"statusDescription\":\"IN TRANSIT\",\"lastUpdateDate\":\"2021-04-28T06:40:05.864Z\",\"estimatedDeliveryDate\":\"2021-04-28T06:40:05.864Z\",\"eventCity\":\"OKLAHOMA CITY\",\"eventState\":\"OK\",\"eventZip\":null,\"eventCountryCode\":\"US\"}",
+    "status": 200,
+    "response": {
+      "status_update_number": "1e29a2d8-8616-44aa-b2df-b0f1c215c82e",
+      "status": true
+    },
+    "rawHeaders": [
+      "Content-Type",
+      "application/json",
+      "Content-Length",
+      "91",
+      "Connection",
+      "close",
+      "Date",
+      "Wed, 28 Apr 2021 06:40:06 GMT",
+      "x-amzn-RequestId",
+      "ed910702-bc9f-4e54-b7dc-6b137099d7b4",
+      "x-amz-apigw-id",
+      "ee1y-Ff8vHcF51Q=",
+      "X-Amzn-Trace-Id",
+      "Root=1-60890346-1523b17b4fea9c775562b391",
+      "X-Cache",
+      "Miss from cloudfront",
+      "Via",
+      "1.1 cfdda2377366ad140c308c7f141eb744.cloudfront.net (CloudFront)",
+      "X-Amz-Cf-Pop",
+      "LAX3-C3",
+      "X-Amz-Cf-Id",
+      "29sUBrqwpNovWnXfZLM5vO7aKYoPkxiDUvk6_KUYGnc9UoRVxY97rg=="
+    ],
+    "responseIsBinary": false
+  },
+  {
+    "scope": "https://expush.narvar.qa:443",
+    "method": "POST",
+    "path": "/qa01/olx",
+    "body": "{\"id\":\"d89ff868-6d3a-49c4-bbde-cf2034c8b069\",\"identifier\":\"NARVARTOKEN\",\"retailerMoniker\":\"builtbar\",\"trackingNo\":\"437d321a-d633-4132-b06b-38af8b268533\",\"carrier\":\"OLX\",\"statusCode\":\"INTRANSIT\",\"statusDescription\":\"IN TRANSIT\",\"lastUpdateDate\":\"2021-04-28T06:40:05.864Z\",\"estimatedDeliveryDate\":\"2021-04-28T06:40:05.864Z\",\"eventCity\":\"OKLAHOMA CITY\",\"eventState\":\"OK\",\"eventZip\":null,\"eventCountryCode\":\"US\"}",
+    "status": 200,
+    "response": {
+      "status_update_number": "c589a53a-f370-4bae-b77d-0743e6cafdba",
+      "status": true
+    },
+    "rawHeaders": [
+      "Content-Type",
+      "application/json",
+      "Content-Length",
+      "91",
+      "Connection",
+      "close",
+      "Date",
+      "Wed, 28 Apr 2021 06:40:06 GMT",
+      "x-amzn-RequestId",
+      "c53b1d18-868c-4f8e-b1e9-0623bce5580c",
+      "x-amz-apigw-id",
+      "ee1zCHUVvHcFrmQ=",
+      "X-Amzn-Trace-Id",
+      "Root=1-60890346-70cabcf0037c74d140b29dc1",
+      "X-Cache",
+      "Miss from cloudfront",
+      "Via",
+      "1.1 de1a76a9cfceb99637fcf59c540ddbde.cloudfront.net (CloudFront)",
+      "X-Amz-Cf-Pop",
+      "LAX3-C3",
+      "X-Amz-Cf-Id",
+      "hkGJ3bFi2MCB_YouHVEtwZCUTA1eD7BKoWo0xOz72-tKhaNw08mmuw=="
+    ],
+    "responseIsBinary": false
+  }
+]

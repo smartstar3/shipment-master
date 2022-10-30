@@ -1,0 +1,148 @@
+[
+  {
+    "scope": "https://pillow.dsapp.io:443",
+    "method": "POST",
+    "path": "/integration/api/v1/orders",
+    "body": "{\"PickupAddress\":{\"addressLine1\":\"5128 W. 79th St.\",\"addressLine2\":\"\",\"company\":null,\"city\":\"Indianapolis\",\"stateProvince\":\"IN\",\"postalCode\":\"46268\"},\"DropoffAddress\":{\"addressLine1\":\"174 Riverdale Ave\",\"addressLine2\":\"F\",\"city\":\"Brooklyn\",\"stateProvince\":\"NY\",\"postalCode\":\"46268\"},\"DropoffContactInfo\":{\"id\":null,\"name\":\"Jamila Small\",\"phoneNumber\":\"317-286-0733\"},\"ReadyAt\":\"2021-07-30T22:33:04.143Z\",\"ReferenceNumber1\":\"00008872784502755082\",\"ReferenceNumber2\":\"21+ SIGNATURE REQUIRED\",\"ServiceLevelId\":\"VAPE\",\"RequireIdentityValidation\":true,\"metadata\":{\"reference1\":\"00008872784502755082\",\"reference2\":\"21+ SIGNATURE REQUIRED\",\"sortcode1\":\"PIL-01\",\"sortcode2\":\"\"},\"NumberOfPieces\":1,\"Weight\":0.3,\"VehicleTypeId\":\"CAR\",\"Items\":[{\"parcelTypeId\":\"VAPE\",\"description\":\"Clothing and Accessories\",\"weight\":0.3,\"barcodeTemplate\":\"DPS000000J000000B\"}]}",
+    "status": 200,
+    "response": {
+      "orderId": "PL888073021"
+    },
+    "rawHeaders": [
+      "Content-Length",
+      "25",
+      "Content-Type",
+      "application/json; charset=utf-8",
+      "Server",
+      "Kestrel",
+      "Set-Cookie",
+      "TiPMix=2.26493943588107; path=/; HttpOnly; Domain=pillow.dsapp.io; Max-Age=3600; Secure",
+      "Set-Cookie",
+      "x-ms-routing-name=self; path=/; HttpOnly; Domain=pillow.dsapp.io; Max-Age=3600; Secure",
+      "Request-Context",
+      "appId=cid-v1:48ff8c27-fd31-490b-902e-8c4414642d9a",
+      "X-Powered-By",
+      "ASP.NET",
+      "Date",
+      "Fri, 30 Jul 2021 22:33:05 GMT",
+      "Connection",
+      "close"
+    ],
+    "responseIsBinary": false
+  },
+  {
+    "scope": "https://pillow.dsapp.io:443",
+    "method": "GET",
+    "path": "/integration/api/v1/orders/PL888073021",
+    "body": "",
+    "status": 200,
+    "response": {
+      "orderId": "PL888073021",
+      "status": 0,
+      "pickupAddress": {
+        "addressLine1": "5128 W. 79th St.",
+        "addressLine2": "",
+        "company": null,
+        "city": "Indianapolis",
+        "postalCode": "46268",
+        "stateProvince": "IN"
+      },
+      "pickupLocation": {
+        "latitude": 39.89711,
+        "longitude": -86.24907,
+        "isValid": true
+      },
+      "pickupContactInfo": {
+        "id": null,
+        "name": null,
+        "phoneNumber": null,
+        "email": null,
+        "language": "en"
+      },
+      "pickupNotes": null,
+      "dropoffAddress": {
+        "addressLine1": "174 Riverdale Ave",
+        "addressLine2": "F",
+        "company": null,
+        "city": "Brooklyn",
+        "postalCode": "46268",
+        "stateProvince": "NY"
+      },
+      "dropoffLocation": {
+        "latitude": 40.66067,
+        "longitude": -73.91,
+        "isValid": true
+      },
+      "dropoffContactInfo": {
+        "id": null,
+        "name": "Jamila Small",
+        "phoneNumber": "317-286-0733",
+        "email": null,
+        "language": "en"
+      },
+      "dropoffNotes": null,
+      "pickupWindow": {
+        "start": "2021-08-02T08:00:00-04:00",
+        "end": "2021-08-02T20:00:00-04:00"
+      },
+      "dropoffWindow": {
+        "start": "2021-08-02T08:00:00-04:00",
+        "end": "2021-08-02T20:00:00-04:00"
+      },
+      "distance": 745.83,
+      "serviceLevelId": "VAPE",
+      "notes": null,
+      "webhookUrl": null,
+      "metadata": {
+        "reference1": "00008872784502755082",
+        "reference2": "21+ SIGNATURE REQUIRED",
+        "sortcode1": "PIL-01",
+        "sortcode2": ""
+      },
+      "numberOfPieces": 1,
+      "weight": 0.3,
+      "weightUnits": "lb",
+      "volume": 0.208,
+      "volumeUnits": "ft³",
+      "readyAt": "2021-07-30T18:33:04.143-04:00",
+      "receivedBy": null,
+      "vehicleTypeId": "CAR",
+      "requireIdentityValidation": true,
+      "charges": [
+        {
+          "type": "Delivery",
+          "price": 0,
+          "fromZone": null,
+          "toZone": null
+        },
+        {
+          "type": "Extra",
+          "price": 0,
+          "quantity": 2,
+          "extraFeeTypeId": "TotalWeight"
+        }
+      ]
+    },
+    "rawHeaders": [
+      "Content-Length",
+      "1453",
+      "Content-Type",
+      "application/json; charset=utf-8",
+      "Server",
+      "Kestrel",
+      "Set-Cookie",
+      "TiPMix=8.23275545064022; path=/; HttpOnly; Domain=pillow.dsapp.io; Max-Age=3600; Secure",
+      "Set-Cookie",
+      "x-ms-routing-name=self; path=/; HttpOnly; Domain=pillow.dsapp.io; Max-Age=3600; Secure",
+      "Request-Context",
+      "appId=cid-v1:48ff8c27-fd31-490b-902e-8c4414642d9a",
+      "X-Powered-By",
+      "ASP.NET",
+      "Date",
+      "Fri, 30 Jul 2021 22:33:06 GMT",
+      "Connection",
+      "close"
+    ],
+    "responseIsBinary": false
+  }
+]

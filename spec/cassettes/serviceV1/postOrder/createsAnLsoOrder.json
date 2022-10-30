@@ -1,0 +1,29 @@
+[
+  {
+    "scope": "https://services.lso.com:443",
+    "method": "POST",
+    "path": "/partnershippingservices/v1_5/PrintingService.asmx?SOAP",
+    "body": "<?xml version=\"1.0\" encoding=\"UTF-8\"?><Envelope xmlns=\"http://schemas.xmlsoap.org/soap/envelope/\"><Header/><Body><PrintAirbill xmlns=\"https://services.lso.com/PrintingService/v1_6\"><request><AuthenticationInfo><Username>onelive</Username><Password>[REDACTED]</Password></AuthenticationInfo><Customer><AccountNumber>[REDACTED]</AccountNumber></Customer><ServiceType>GroundBasic</ServiceType><FromName>Shipping Dept.</FromName><FromPhone>1-800-866-0286</FromPhone><FromCompany>Andrew Tribone</FromCompany><FromAddress1>1100 E. HOWARD LANE</FromAddress1><FromZipCode>78753</FromZipCode><FromCity>Austin</FromCity><FromState>TX</FromState><FromCountry>UnitedStates</FromCountry><ToName>Jamila Small</ToName><ToPhone>347-691-8291</ToPhone><ToCompany>Residence</ToCompany><ToAddress1>174 Riverdale Ave</ToAddress1><ToZipCode>70601</ToZipCode><ToCity>Brooklyn</ToCity><ToState>NY</ToState><ToCountry>UnitedStates</ToCountry><Length>16</Length><Width>12</Width><Height>2</Height><Weight>0</Weight><LsoSuppliesUsed>false</LsoSuppliesUsed><OTT>false</OTT><AddSaturdayService>false</AddSaturdayService><EncodeLabel>true</EncodeLabel><Format>ZPL</Format><LabelSize>s4x6_5</LabelSize><HighRes>false</HighRes><UseSimple>false</UseSimple><DeliveryNotification>false</DeliveryNotification><SignatureRequirement>None</SignatureRequirement><SignatureRelease>false</SignatureRelease><ToAddress2>F</ToAddress2><FromAddress2>STE 350</FromAddress2><DeclaredValue>19.99</DeclaredValue></request></PrintAirbill></Body></Envelope>",
+    "status": 200,
+    "response": "<?xml version=\"1.0\" encoding=\"utf-8\"?><soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\"><soap:Body><PrintAirbillResponse xmlns=\"https://services.lso.com/PrintingService/v1_6\"><PrintAirbillResult><EstimatedTotalCharge>0</EstimatedTotalCharge><LabelsData><StandardLabelData><AirbillNo>ZY058HQB</AirbillNo><ServiceDescription>LSO Ground</ServiceDescription><ServiceType>GroundBasic</ServiceType><SortCode>LCH</SortCode><Piece>1</Piece><Pieces>1</Pieces><FromName>SHIPPING DEPT.</FromName><FromPhone>1800866028</FromPhone><FromCompany>ANDREW TRIBONE</FromCompany><FromAddress1>1100 E. HOWARD LANE</FromAddress1><FromAddress2>STE 350</FromAddress2><FromZipCode>78753</FromZipCode><FromCity>AUSTIN</FromCity><FromState>TX</FromState><FromCountry>UnitedStates</FromCountry><ToName>JAMILA SMALL</ToName><ToPhone>3476918291</ToPhone><ToCompany>RESIDENCE</ToCompany><ToAddress1>174 RIVERDALE AVE</ToAddress1><ToAddress2>F</ToAddress2><ToZipCode>70601</ToZipCode><ToCity>LAKE CHARLES</ToCity><ToState>LA</ToState><ToCountry>UnitedStates</ToCountry><ResidentialDelivery>false</ResidentialDelivery><Length>16</Length><Width>12</Width><Height>2</Height><Weight>0</Weight><LsoSuppliesUsed>false</LsoSuppliesUsed><OTT>false</OTT><DeclaredValue>100</DeclaredValue><BillingRef /><BillingRef2 /><BillingRef3 /><BillingRef4 /><SignatureRequirement>None</SignatureRequirement></StandardLabelData></LabelsData><Images><LabelImage><LabelType>ZPL</LabelType><Base64data>XlhBDQpeRlQxNTAsNTReQTBOLDI4LDI4XkZIXF5GRExTTw0KXkZTXkZUMjIwLDU0XkEwTiwyOCwyOF5GSFxeRkQxLTgwMC04MDAtODk4NA0KXkZTXkZUNDcwLDU0XkEwTiwyOCwyOF5GSFxeRkR3d3cubHNvLmNvbQ0KXkZTXkZUMzQyLDgxXkEwTiwxNywxNl5GSFxeRkRUbzoNCl5GU15GVDM1MCwxMjleQTBOLDQwLDMyXkZIXF5GREpBTUlMQSBTTUFMTA0KXkZTXkZUMzUwLDE3NV5BME4sNDAsMzJeRkhcXkZEUkVTSURFTkNFDQpeRlNeRlQzNTAsMjIxXkEwTiw0MCwzMl5GSFxeRkQxNzQgUklWRVJEQUxFIEFWRQ0KXkZTXkZUMzUwLDI2N15BME4sNDAsMzJeRkhcXkZERg0KXkZTXkZUMzUwLDMxM15BME4sNDAsMzJeRkhcXkZEDQpeRlNeRlQzNTAsMzU5XkEwTiw0MCwzMl5GSFxeRkRMQUtFIENIQVJMRVMsIExBIDcwNjAxDQpeRlNeRlQzNTAsNDA1XkEwTiw0MCwzMl5GSFxeRkQzNDc2OTE4MjkxDQpeRlNeRlQxNiw4MV5BME4sMTcsMTZeRkhcXkZERnJvbToNCl5GU15GVDE2LDExMV5BME4sMjMsMjReRkhcXkZEU0hJUFBJTkcgREVQVC4NCl5GU15GVDE2LDEzNV5BME4sMjMsMjReRkhcXkZEQU5EUkVXIFRSSUJPTkUNCl5GU15GVDE2LDE1OV5BME4sMjMsMjReRkhcXkZEMTEwMCBFLiBIT1dBUkQgTEFORQ0KXkZTXkZUMTYsMTgzXkEwTiwyMywyNF5GSFxeRkRBVVNUSU4sIFRYIDc4NzUzDQpeRlNeRlQxNiwyMDdeQTBOLDIzLDI0XkZIXF5GRDE4MDA4NjYwMjgNCl5GU15GVDIxLDM3OF5BME4sMjMsMjFeRkhcXkZEUmVmOiANCl5GU15GVDUyNyw0NDZeQTBOLDIzLDI0XkZIXF5GRFBpZWNlczogMSBvZiAxDQpeRlNeRlQ1MjcsNDgyXkEwTiwyMywyNF5GSFxeRkRQcmludGVkIERhdGU6IDcvMzAvMjAyMQ0KXkZTXkZUMjEsNDcwXkEwTiwyMywyNF5GSFxeRkRXZWlnaHQ6IDANCl5GU15CWTUsMywxNjBeRlQ5NCw3MDVeQkNOLCxZLE5eRkRaWTA1OEhRQg0KXkZTXkZUMjYwLDc4MF5BME4sMjgsMjheRkhcXkZEDQpeRlNeRk8yMSw3OTBeR0I3NjMsMCw4DQpeRlNeRlQzMCw4NDFeQTBOLDY4LDY3XkZIXF5GRFcNCl5GU15GTzkwLDc5MF5HQjEzMCw4NSw4NQ0KXkZTXkZUOTAsODU4XkEwTiw2OCw2N15GUl5GSFxeRkRMQ0gNCl5GU15GVDI2MCw4NTheQTBOLDU2LDU1XkZIXF5GRExTTyBHcm91bmQNCl5GU15GTzIxLDg4N15HQjc2MywwLDgNCl5GU15GVDIzLDkyMF5BME4sMTcsMTZeRkhcXkZEU3BlY2lhbCBJbnN0cnVjdGlvbnM6DQpeRlNeRlQyMyw5MzVeQTBOLDE3LDE2XkZIXF5GRA0KXkZTXkZUMjMsOTYwXkEwTiwyOCwyOF5GSF5GRA0KXkZTXkZUMjMsOTc1XF5GRA0KXkZTXlBRMSwwLDEsWV5YWg0KDQo=</Base64data></LabelImage></Images></PrintAirbillResult></PrintAirbillResponse></soap:Body></soap:Envelope>",
+    "rawHeaders": [
+      "Server",
+      "nginx/1.19.10",
+      "Date",
+      "Fri, 30 Jul 2021 22:16:28 GMT",
+      "Content-Type",
+      "text/xml; charset=utf-8",
+      "Content-Length",
+      "3412",
+      "Connection",
+      "close",
+      "Cache-Control",
+      "private, max-age=0",
+      "X-AspNet-Version",
+      "4.0.30319",
+      "X-Powered-By",
+      "ASP.NET"
+    ],
+    "responseIsBinary": false
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "scope": "https://expush.narvar.qa:443",
+    "method": "POST",
+    "path": "/qa01/olx",
+    "body": "{\"id\":\"d49423e4-a6ba-4667-8b46-8834d8fde04a\",\"identifier\":\"NARVARTOKEN\",\"retailerMoniker\":\"builtbar\",\"trackingNo\":\"45c98045-efb0-44f7-bb4f-1eeaec17d097\",\"carrier\":\"OLX\",\"statusCode\":\"INTRANSIT\",\"statusDescription\":\"IN TRANSIT\",\"lastUpdateDate\":\"2021-04-28T06:32:10.029Z\",\"estimatedDeliveryDate\":null,\"eventCity\":\"OKLAHOMA CITY\",\"eventState\":\"OK\",\"eventZip\":null,\"eventCountryCode\":\"US\"}",
+    "status": 200,
+    "response": {
+      "status_update_number": "f26914be-0ede-4117-9495-c2fd3ab4ddd0",
+      "status": true
+    },
+    "rawHeaders": [
+      "Content-Type",
+      "application/json",
+      "Content-Length",
+      "91",
+      "Connection",
+      "close",
+      "Date",
+      "Wed, 28 Apr 2021 06:32:10 GMT",
+      "x-amzn-RequestId",
+      "d6f25ad8-abc4-4ead-8bab-2df212a890d6",
+      "x-amz-apigw-id",
+      "ee0opGwLvHcFgUQ=",
+      "X-Amzn-Trace-Id",
+      "Root=1-6089016a-64f949e07c48f7535f860ac2",
+      "X-Cache",
+      "Miss from cloudfront",
+      "Via",
+      "1.1 85a473acf37dd71b869c063db2deb905.cloudfront.net (CloudFront)",
+      "X-Amz-Cf-Pop",
+      "LAX50-C4",
+      "X-Amz-Cf-Id",
+      "43eRMp9YAdYfDWimA4BYOnha2W6O2jMMoqNm8p15DtnZ33gw304vbA=="
+    ],
+    "responseIsBinary": false
+  }
+]

@@ -1,0 +1,39 @@
+[
+  {
+    "scope": "http://test2.uniteddeliveryservice.com:80",
+    "method": "POST",
+    "path": "/uds/services/ordering.php",
+    "body": "<?xml version=\"1.0\" encoding=\"UTF-8\"?><Envelope xmlns=\"http://schemas.xmlsoap.org/soap/envelope/\"><Body><place_orders xmlns=\"urn:UDSOrdering\"><AuthInfo><client_id>[REDACTED]</client_id><client_key>[REDACTED]</client_key></AuthInfo><Orders><Order><OrderRef>62457395</OrderRef><LocationName>Jamila Small</LocationName><Address1>174 Riverdale Ave</Address1><Address2>F</Address2><City>Brooklyn</City><State>NY</State><ZipCode>61043</ZipCode><ContactName>Shipper Name</ContactName><Phone>800-866-0286</Phone><Instructions></Instructions><SignatureRequired>false</SignatureRequired><Pieces>1</Pieces><Weight>0.01875</Weight><PrintLabelFormat>LabelZplStr2</PrintLabelFormat></Order></Orders></place_orders></Body></Envelope>",
+    "status": 200,
+    "response": "<?xml version=\"1.0\" encoding=\"ISO-8859-1\"?><SOAP-ENV:Envelope SOAP-ENV:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xmlns:SOAP-ENV=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:SOAP-ENC=\"http://schemas.xmlsoap.org/soap/encoding/\" xmlns:tns=\"urn:UDSOrdering\"><SOAP-ENV:Body><ns1:place_ordersResponse xmlns:ns1=\"urn:UDSOrdering\"><return xsi:type=\"SOAP-ENC:Array\" SOAP-ENC:arrayType=\"tns:Result[1]\"><item xsi:type=\"tns:Result\"><Status xsi:type=\"xsd:int\">100</Status><StatusMsg xsi:type=\"xsd:string\">Order Created</StatusMsg><OrderRef xsi:type=\"xsd:string\">62457395</OrderRef><OrderId xsi:type=\"xsd:int\">29379377</OrderId><Price xsi:type=\"xsd:double\"></Price><Labels xsi:type=\"SOAP-ENC:Array\" SOAP-ENC:arrayType=\"tns:Label[1]\"><item xsi:type=\"tns:Label\"><Barcode xsi:type=\"xsd:string\">UDS293793771</Barcode><LabelZplStr xsi:type=\"xsd:string\">^XA^PW800^LH0,0^FO0,40^AQN,11^FDFrom: ^FS^FO60,40^AQN,11^FDONE LIVE^FS^FO60,70^AQN,11^FD1111 Ridge Ave ^FS^FO60,100^AQN,11^FDLombard, IL  60148^FS^FO0,130^GB800,1,4^FS^FO0,180^ARN,11^FDTo: ^FS^FO80,180^ARN,11^FDJAMILA SMALL^FS^FO80,230^ARN,11^FDAttn: SHIPPER NAME^FS^FO80,280^ARN,11^FD174 RIVERDALE AVE F^FS^FO80,330^ARN,11^FDBROOKLYN, IL  61043^FS^FO0,410^GB800,1,4^FS^FO10,460^AQN,18^FDDate: 2021-06-24^FS^FO220,460^AQN,18^FDDelivery By: 17:00:00^FS^FO650,460^AQN,18^FDPkg: 1 of 1^FS^FO10,490^AQN,18^FDUDS: 29379377 - 62457395^FS^FO10,520^AQN,18^FB750,6,0,L,60^FDInstr:^FS^FO100,520^ARN,18^FB600,1,0,C,0^FDPRU 27 - BROOKLYN - 61043^FS^FO144,560^BY3^BC,100,N^FDUDS293793771^FS^FO100,670^ARN,18^FB600,1,0,C,0^FDUDS293793771^FS^XZ</LabelZplStr></item></Labels></item></return></ns1:place_ordersResponse></SOAP-ENV:Body></SOAP-ENV:Envelope>",
+    "rawHeaders": [
+      "Date",
+      "Thu, 24 Jun 2021 00:39:23 GMT",
+      "Server",
+      "Apache/2.4.29 (Ubuntu)",
+      "Set-Cookie",
+      "PHPSESSID=dqqa1igji531d4bqn5lddu06ks; path=/",
+      "Expires",
+      "Sat, 1 Jan 2000 00:00:00 GMT",
+      "Last-Modified",
+      "Thu, 24 Jun 2021 00:39:23 GMT",
+      "Cache-Control",
+      "no-store, no-cache, must-revalidate",
+      "Cache-Control",
+      "post-check=0, pre-check=0",
+      "Pragma",
+      "no-cache",
+      "X-SOAP-Server",
+      "NuSOAP/0.9.5 (1.123)",
+      "Content-Length",
+      "1792",
+      "Vary",
+      "Accept-Encoding",
+      "Connection",
+      "close",
+      "Content-Type",
+      "text/xml; charset=ISO-8859-1"
+    ],
+    "responseIsBinary": false
+  }
+]

@@ -1,0 +1,34 @@
+* Rules processing
+This module provides for de-coupled rules definition and processing via a shared fact-table object. The assumption is that the fact table is shared by all individual rules processors until a terminal state is reached and the final fact is known.
+
+** Fact table
+The fact table is a shared object, storing a common fact object as follows.
+
+*** Fact Object
+#+BEGIN_SRC js
+  {
+      name: <string> // fact's name,
+      value: untyped value for fact,
+      options: object containing any related fact info
+  }
+#+END_SRC 
+
+*** Fact Table Operations
+The fact table supports these operations.
+
+- getFact() :: allows a user to fetch an arbitrary fact by name. Returns FactObject or null if not present.
+
+- setFact() :: allows user to set/update a fact by name.
+
+- subscribe() :: sets the user as a listener for any/all fact updates (e.g., any call to setFact()). This allows the user to scan the fact table upon each update, manipulate any local state, and update the fact table accordingly.
+
+Important Note: the subscribe callback process is synchronous and immediate upon each setFact() call. This means that if a user is subscribed to events and then calls setFact() there may be a recursive call back to that user. This may be a useful function but it is important to know and avoid infinite recursion situations.
+
+** Basic Usage
+The basic operation is that a top-level function defines a new fact table and allows subscription to that fact table by a set of individual fact/state processors. The top module subscribes and defines a set of terminal facts that must be present to proceed. The sub-rule processors subscribe to the fact table and define two fact states:
+
+1) the initiation fact that, when present, starts additional fact resolution process
+2) the terminal fact state where the sub-process is complete and has posted its final fact 
+
+It is assumed that there will be several sub-rules processes running in parallel, performing whatever action is needed to resolve their terminal fact condition. The top-level rule process, just waits for the sub-processes to complete their terminal state. This defines the top-process' terminal state. In other words, the top-process is complete when all facts are known and posted by all sub-processes. The top-level process detects this condition, extracts the facts as needed to resolve the top-level rule, and proceeds.
+ 

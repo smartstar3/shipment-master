@@ -1,0 +1,38 @@
+[
+  {
+    "scope": "https://expush.narvar.qa:443",
+    "method": "POST",
+    "path": "/qa01/olx",
+    "body": "{\"id\":\"9c2ef1f4-b023-4303-8f03-c66ccfe8bb62\",\"identifier\":\"NARVARTOKEN\",\"retailerMoniker\":\"builtbar\",\"trackingNo\":\"D10012272685216\",\"carrier\":\"OLX\",\"statusCode\":\"INTRANSIT\",\"statusDescription\":\"Received at local distribution center\",\"lastUpdateDate\":\"2021-04-27T22:10:30Z\",\"estimatedDeliveryDate\":\"2021-04-27T22:10:30Z\",\"eventCity\":\"COMMERCE\",\"eventState\":\"CA\",\"eventZip\":\"90040\",\"eventCountryCode\":\"US\"}",
+    "status": 200,
+    "response": {
+      "status_update_number": "dddf8014-8e45-4958-9730-4ec8de89c02a",
+      "status": true
+    },
+    "rawHeaders": [
+      "Content-Type",
+      "application/json",
+      "Content-Length",
+      "91",
+      "Connection",
+      "close",
+      "Date",
+      "Wed, 28 Apr 2021 05:10:31 GMT",
+      "x-amzn-RequestId",
+      "e913f54b-5151-4891-ba09-93e627254405",
+      "x-amz-apigw-id",
+      "eeorJGxDvHcFQng=",
+      "X-Amzn-Trace-Id",
+      "Root=1-6088ee47-6d0ebb1e16ce9e8e6938051b",
+      "X-Cache",
+      "Miss from cloudfront",
+      "Via",
+      "1.1 e542705436a48f6edc6c515ff1991860.cloudfront.net (CloudFront)",
+      "X-Amz-Cf-Pop",
+      "LAX50-C4",
+      "X-Amz-Cf-Id",
+      "VAHfljvPwbZRz1bwC7tSalt9MIcHIocm7E51Hya-piB-KKclulOyxA=="
+    ],
+    "responseIsBinary": false
+  }
+]

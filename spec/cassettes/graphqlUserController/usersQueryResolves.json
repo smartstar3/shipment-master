@@ -1,0 +1,365 @@
+[
+  {
+    "scope": "https://parcelcastx.us.auth0.com:443",
+    "method": "POST",
+    "path": "/oauth/token",
+    "body": "{\"client_id\":\"[REDACTED]\",\"client_secret\":\"[REDACTED]\",\"audience\":\"https://parcelcastx.us.auth0.com/api/v2/\",\"grant_type\":\"client_credentials\"}",
+    "status": 200,
+    "response": {
+      "access_token": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjVlbGw0SkVvdFVzYXFENDFBM3UtOSJ9.eyJpc3MiOiJodHRwczovL3BhcmNlbGNhc3R4LnVzLmF1dGgwLmNvbS8iLCJzdWIiOiJyQUFiZVBNdGdsbVFWdnR3Qk9FZ0JvZ08yV2pEbG5uRkBjbGllbnRzIiwiYXVkIjoiaHR0cHM6Ly9wYXJjZWxjYXN0eC51cy5hdXRoMC5jb20vYXBpL3YyLyIsImlhdCI6MTYyODc5MTEzMywiZXhwIjoxNjI4ODc3NTMzLCJhenAiOiJyQUFiZVBNdGdsbVFWdnR3Qk9FZ0JvZ08yV2pEbG5uRiIsInNjb3BlIjoicmVhZDp1c2VycyB1cGRhdGU6dXNlcnMgZGVsZXRlOnVzZXJzIGNyZWF0ZTp1c2VycyByZWFkOnVzZXJzX2FwcF9tZXRhZGF0YSB1cGRhdGU6dXNlcnNfYXBwX21ldGFkYXRhIGRlbGV0ZTp1c2Vyc19hcHBfbWV0YWRhdGEgY3JlYXRlOnVzZXJzX2FwcF9tZXRhZGF0YSIsImd0eSI6ImNsaWVudC1jcmVkZW50aWFscyJ9.W9rnVjdW6ZMbyv3idcIDbjsr0fH6V57vOlwNy6mIUqA6buF7lsepBNAWRrucd3ao3cUt8d8vqajqWHRlLV-DO6Pwa89eSKtaWSXZ9eWGENSZwBsI4b1zwLRytrWoy-0ZSsUrxFypJlY37599np5kVlH6eCh_E7B4RcUzni6MBaIgbLbg_FTUykGpkG5wYE1dwW5VL_iR4tdRXREpdWX4sjPZa0AZP23bt80swV5bmEWYnGPn8qoEjA_FqSVC9KUugvA8glimgTWXzzs5bPFUT3R2prbvyShIMX50aXyh9ADzBGCg4bJQu7Qle0_zcUT4WEF02OeFOVerJg8z1uqa4A",
+      "scope": "read:users update:users delete:users create:users read:users_app_metadata update:users_app_metadata delete:users_app_metadata create:users_app_metadata",
+      "expires_in": 86400,
+      "token_type": "Bearer"
+    },
+    "rawHeaders": [
+      "Date",
+      "Thu, 12 Aug 2021 17:58:53 GMT",
+      "Content-Type",
+      "application/json",
+      "Transfer-Encoding",
+      "chunked",
+      "Connection",
+      "close",
+      "CF-Ray",
+      "67db98266aecc16b-IAD",
+      "Cache-Control",
+      "no-store",
+      "Set-Cookie",
+      "did=s%3Av0%3Af4afcc00-fb96-11eb-8ca9-49c84c930393.NGiRAgpEYdFvPFFkLDi%2Fm5SLvWQHxRr6%2FeXqqPju%2F4E; Max-Age=31557600; Path=/; Expires=Fri, 12 Aug 2022 23:58:53 GMT; HttpOnly; Secure; SameSite=None",
+      "Strict-Transport-Security",
+      "max-age=31536000",
+      "Vary",
+      "Accept-Encoding, Origin",
+      "CF-Cache-Status",
+      "DYNAMIC",
+      "Expect-CT",
+      "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
+      "ot-baggage-auth0-request-id",
+      "67db98266aecc16b",
+      "ot-tracer-sampled",
+      "true",
+      "ot-tracer-spanid",
+      "6218c0083db7be08",
+      "ot-tracer-traceid",
+      "3db284db5b9e77d2",
+      "Pragma",
+      "no-cache",
+      "Set-Cookie",
+      "did_compat=s%3Av0%3Af4afcc00-fb96-11eb-8ca9-49c84c930393.NGiRAgpEYdFvPFFkLDi%2Fm5SLvWQHxRr6%2FeXqqPju%2F4E; Max-Age=31557600; Path=/; Expires=Fri, 12 Aug 2022 23:58:53 GMT; HttpOnly; Secure",
+      "X-Auth0-RequestId",
+      "d58b2532b16b461549e4",
+      "X-Content-Type-Options",
+      "nosniff",
+      "X-RateLimit-Limit",
+      "30",
+      "X-RateLimit-Remaining",
+      "29",
+      "X-RateLimit-Reset",
+      "1628791134",
+      "Server",
+      "cloudflare",
+      "alt-svc",
+      "h3-27=\":443\"; ma=86400, h3-28=\":443\"; ma=86400, h3-29=\":443\"; ma=86400, h3=\":443\"; ma=86400"
+    ],
+    "responseIsBinary": false
+  },
+  {
+    "scope": "https://parcelcastx.us.auth0.com:443",
+    "method": "GET",
+    "path": "/api/v2/users",
+    "body": "",
+    "status": 200,
+    "response": [
+      {
+        "created_at": "2021-06-21T20:12:19.036Z",
+        "email": "ci@xdelivery.ai",
+        "email_verified": false,
+        "identities": [
+          {
+            "user_id": "60d0f2a316f69600691c27b9",
+            "provider": "auth0",
+            "connection": "Username-Password-Authentication",
+            "isSocial": false
+          }
+        ],
+        "name": "ci@xdelivery.ai",
+        "nickname": "ci",
+        "picture": "https://s.gravatar.com/avatar/cae1b7e2779ec760e9b917290f0e226e?s=480&r=pg&d=https%3A%2F%2Fcdn.auth0.com%2Favatars%2Fci.png",
+        "updated_at": "2021-08-12T17:49:13.194Z",
+        "user_id": "auth0|60d0f2a316f69600691c27b9",
+        "user_metadata": {},
+        "last_login": "2021-08-12T17:49:13.194Z",
+        "last_ip": "24.23.233.130",
+        "logins_count": 975,
+        "app_metadata": {
+          "organization_id": [
+            4
+          ]
+        }
+      },
+      {
+        "created_at": "2021-06-10T15:19:53.289Z",
+        "email": "tom@xdelivery.ai",
+        "email_verified": false,
+        "identities": [
+          {
+            "user_id": "60c22d995d89a500699c1885",
+            "provider": "auth0",
+            "connection": "Username-Password-Authentication",
+            "isSocial": false
+          }
+        ],
+        "name": "tom@xdelivery.ai",
+        "nickname": "tom",
+        "picture": "https://s.gravatar.com/avatar/c246cf1a853fae002e5607deb541e923?s=480&r=pg&d=https%3A%2F%2Fcdn.auth0.com%2Favatars%2Fto.png",
+        "updated_at": "2021-08-05T19:56:29.434Z",
+        "user_id": "auth0|60c22d995d89a500699c1885",
+        "user_metadata": {},
+        "last_login": "2021-08-05T19:56:29.434Z",
+        "last_ip": "107.15.242.160",
+        "logins_count": 75,
+        "app_metadata": {
+          "organization_id": [
+            4
+          ]
+        }
+      },
+      {
+        "created_at": "2021-06-14T15:50:46.816Z",
+        "email": "tom.bryant@xdelivery.ai",
+        "email_verified": true,
+        "family_name": "Bryant",
+        "given_name": "Tom",
+        "identities": [
+          {
+            "provider": "google-oauth2",
+            "user_id": "103869869755901165657",
+            "connection": "google-oauth2",
+            "isSocial": true
+          }
+        ],
+        "locale": "en",
+        "name": "Tom Bryant",
+        "nickname": "tom.bryant",
+        "picture": "https://lh3.googleusercontent.com/a/AATXAJxMJT1535rWL9v-w6EWc8TDwtbokl7eyF1QBI_g=s96-c",
+        "updated_at": "2021-06-14T15:51:12.671Z",
+        "user_id": "google-oauth2|103869869755901165657",
+        "last_login": "2021-06-14T15:51:12.671Z",
+        "last_ip": "107.15.242.160",
+        "logins_count": 2
+      },
+      {
+        "created_at": "2021-08-10T18:08:02.395Z",
+        "email": "account_mgmttest2@xdelivery.ai",
+        "email_verified": false,
+        "family_name": "management",
+        "given_name": "account",
+        "identities": [
+          {
+            "connection": "Username-Password-Authentication",
+            "user_id": "6112c0820dde010068940b0b",
+            "provider": "auth0",
+            "isSocial": false
+          }
+        ],
+        "name": "account_mgmttest2@xdelivery.ai",
+        "nickname": "account_mgmttest2",
+        "picture": "https://s.gravatar.com/avatar/5e6de561bf56df0991311c73dff93842?s=480&r=pg&d=https%3A%2F%2Fcdn.auth0.com%2Favatars%2Fac.png",
+        "updated_at": "2021-08-10T18:08:02.395Z",
+        "user_id": "auth0|6112c0820dde010068940b0b",
+        "app_metadata": {
+          "organization_id": [
+            4
+          ]
+        }
+      },
+      {
+        "created_at": "2021-08-10T18:04:59.775Z",
+        "email": "account_mgmttest@xdelivery.ai",
+        "email_verified": false,
+        "family_name": "management",
+        "given_name": "account",
+        "identities": [
+          {
+            "connection": "Username-Password-Authentication",
+            "user_id": "6112bfcbc61fd70077d2db87",
+            "provider": "auth0",
+            "isSocial": false
+          }
+        ],
+        "name": "account_mgmttest@xdelivery.ai",
+        "nickname": "account_mgmttest",
+        "picture": "https://s.gravatar.com/avatar/e8b379e7deed9a69b611945a6e5aff51?s=480&r=pg&d=https%3A%2F%2Fcdn.auth0.com%2Favatars%2Fac.png",
+        "updated_at": "2021-08-10T18:04:59.775Z",
+        "user_id": "auth0|6112bfcbc61fd70077d2db87",
+        "app_metadata": {
+          "organization_id": [
+            4
+          ]
+        }
+      },
+      {
+        "created_at": "2021-08-10T18:02:19.576Z",
+        "email": "accountmgmttest@xdelivery.ai",
+        "email_verified": false,
+        "family_name": "management",
+        "given_name": "account",
+        "identities": [
+          {
+            "connection": "Username-Password-Authentication",
+            "user_id": "6112bf2b0f866400692e0d5d",
+            "provider": "auth0",
+            "isSocial": false
+          }
+        ],
+        "name": "accountmgmttest@xdelivery.ai",
+        "nickname": "accountmgmttest",
+        "picture": "https://s.gravatar.com/avatar/003b02ea5ca9deb7a6b3e9330185c39e?s=480&r=pg&d=https%3A%2F%2Fcdn.auth0.com%2Favatars%2Fac.png",
+        "updated_at": "2021-08-10T18:02:19.576Z",
+        "user_id": "auth0|6112bf2b0f866400692e0d5d",
+        "app_metadata": {
+          "organization_id": [
+            4
+          ]
+        }
+      },
+      {
+        "created_at": "2021-08-10T18:00:00.570Z",
+        "email": "accountmgmt-test@xdelivery.ai",
+        "email_verified": false,
+        "family_name": "management",
+        "given_name": "account",
+        "identities": [
+          {
+            "connection": "Username-Password-Authentication",
+            "user_id": "6112bea08e31d50069f8b75c",
+            "provider": "auth0",
+            "isSocial": false
+          }
+        ],
+        "name": "accountmgmt-test@xdelivery.ai",
+        "nickname": "accountmgmt-test",
+        "picture": "https://s.gravatar.com/avatar/be08e0fdcf4e665bb77e09608deff895?s=480&r=pg&d=https%3A%2F%2Fcdn.auth0.com%2Favatars%2Fac.png",
+        "updated_at": "2021-08-10T18:00:00.570Z",
+        "user_id": "auth0|6112bea08e31d50069f8b75c",
+        "app_metadata": {
+          "organization_id": [
+            4
+          ]
+        }
+      },
+      {
+        "created_at": "2021-08-09T17:27:50.553Z",
+        "email": "tom.bryant+test2@xdelivery.ai",
+        "email_verified": false,
+        "identities": [
+          {
+            "connection": "Username-Password-Authentication",
+            "user_id": "611165963582bc006949153f",
+            "provider": "auth0",
+            "isSocial": false
+          }
+        ],
+        "name": "tom.bryant+test2@xdelivery.ai",
+        "nickname": "tom.bryant+test2",
+        "picture": "https://s.gravatar.com/avatar/c10fbf0e5f24df7aecf25f125d7fddd2?s=480&r=pg&d=https%3A%2F%2Fcdn.auth0.com%2Favatars%2Fto.png",
+        "updated_at": "2021-08-09T17:27:50.553Z",
+        "user_id": "auth0|611165963582bc006949153f",
+        "app_metadata": {
+          "organization_id": [
+            4
+          ]
+        }
+      },
+      {
+        "created_at": "2021-08-09T17:21:34.797Z",
+        "email": "tom.bryant+test@xdelivery.ai",
+        "email_verified": true,
+        "identities": [
+          {
+            "connection": "Username-Password-Authentication",
+            "user_id": "6111641e8e31d50069f877e5",
+            "provider": "auth0",
+            "isSocial": false
+          }
+        ],
+        "name": "tom.bryant+test@xdelivery.ai",
+        "nickname": "tom.bryant+test",
+        "picture": "https://s.gravatar.com/avatar/077ee44e031c52a4602be9e2e03d85f9?s=480&r=pg&d=https%3A%2F%2Fcdn.auth0.com%2Favatars%2Fto.png",
+        "updated_at": "2021-08-09T17:21:48.348Z",
+        "user_id": "auth0|6111641e8e31d50069f877e5",
+        "app_metadata": {
+          "organization_id": [
+            4
+          ]
+        }
+      },
+      {
+        "created_at": "2021-08-06T14:18:06.709Z",
+        "email": "tom+test@gmail.com",
+        "email_verified": false,
+        "identities": [
+          {
+            "connection": "Username-Password-Authentication",
+            "user_id": "610d449ed056750070dbf2f7",
+            "provider": "auth0",
+            "isSocial": false
+          }
+        ],
+        "name": "tom+test@gmail.com",
+        "nickname": "tom+test",
+        "picture": "https://s.gravatar.com/avatar/633e35c16563387f0b960492c5295406?s=480&r=pg&d=https%3A%2F%2Fcdn.auth0.com%2Favatars%2Fto.png",
+        "updated_at": "2021-08-06T14:18:06.709Z",
+        "user_id": "auth0|610d449ed056750070dbf2f7",
+        "app_metadata": {
+          "organization_id": [
+            4
+          ]
+        }
+      }
+    ],
+    "rawHeaders": [
+      "Date",
+      "Thu, 12 Aug 2021 17:58:53 GMT",
+      "Content-Type",
+      "application/json; charset=utf-8",
+      "Transfer-Encoding",
+      "chunked",
+      "Connection",
+      "close",
+      "CF-Ray",
+      "67db982888d3062f-IAD",
+      "Cache-Control",
+      "no-cache",
+      "Strict-Transport-Security",
+      "max-age=31536000",
+      "Vary",
+      "origin,accept-encoding",
+      "CF-Cache-Status",
+      "DYNAMIC",
+      "Expect-CT",
+      "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
+      "ot-baggage-auth0-request-id",
+      "67db982888d3062f",
+      "ot-tracer-sampled",
+      "true",
+      "ot-tracer-spanid",
+      "7113b251542d9fb7",
+      "ot-tracer-traceid",
+      "56ff139a0011b1f4",
+      "X-Content-Type-Options",
+      "nosniff",
+      "x-ratelimit-limit",
+      "10",
+      "x-ratelimit-remaining",
+      "9",
+      "x-ratelimit-reset",
+      "1628791135",
+      "Server",
+      "cloudflare",
+      "alt-svc",
+      "h3-27=\":443\"; ma=86400, h3-28=\":443\"; ma=86400, h3-29=\":443\"; ma=86400, h3=\":443\"; ma=86400"
+    ],
+    "responseIsBinary": false
+  }
+]

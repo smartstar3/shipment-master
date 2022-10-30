@@ -1,0 +1,29 @@
+[
+  {
+    "scope": "https://services.lso.com:443",
+    "method": "POST",
+    "path": "/partnershippingservices/v1_5/PrintingService.asmx?SOAP",
+    "body": "<?xml version=\"1.0\" encoding=\"UTF-8\"?><Envelope xmlns=\"http://schemas.xmlsoap.org/soap/envelope/\"><Header/><Body><PrintAirbill xmlns=\"https://services.lso.com/PrintingService/v1_6\"><request><AuthenticationInfo><Username>onelive</Username><Password>[REDACTED]</Password></AuthenticationInfo><Customer><AccountNumber>[REDACTED]</AccountNumber></Customer><ServiceType>GroundBasic</ServiceType><FromName>undefined</FromName><FromPhone>4152948888</FromPhone><FromCompany>OneLive</FromCompany><FromAddress1>1100 E. HOWARD LANE</FromAddress1><FromZipCode>78753</FromZipCode><FromCity>Austin</FromCity><FromState>TX</FromState><FromCountry>UnitedStates</FromCountry><ToName>James Crow</ToName><ToPhone>null</ToPhone><ToCompany>OneLive</ToCompany><ToAddress1>9600 Escarpment Blvd</ToAddress1><ToAddress2>#745-259</ToAddress2><ToZipCode>01010</ToZipCode><ToCity>Austin</ToCity><ToState>TX</ToState><ToCountry>UnitedStates</ToCountry><Length>5</Length><Width>6</Width><Height>4</Height><Weight>0</Weight><LsoSuppliesUsed>false</LsoSuppliesUsed><OTT>false</OTT><AddSaturdayService>false</AddSaturdayService><EncodeLabel>true</EncodeLabel><Format>ZPL</Format><LabelSize>s4x6_5</LabelSize><HighRes>false</HighRes><UseSimple>false</UseSimple><DeliveryNotification>false</DeliveryNotification><SignatureRequirement>None</SignatureRequirement><SignatureRelease>false</SignatureRelease></request></PrintAirbill></Body></Envelope>",
+    "status": 500,
+    "response": "<?xml version=\"1.0\" encoding=\"utf-8\"?><soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\"><soap:Body><soap:Fault><faultcode>soap:Client</faultcode><faultstring>Exception occurred</faultstring><faultactor>https://services.lso.com/partnershippingservices/v1_5/PrintingService.asmx?SOAP</faultactor><detail><webServiceException xmlns=\"https://services.lso.com/WebServiceException/v1\"><code>670100</code><action>Problem with input data: LSO does not offer service to that DELIVERY zip code.[US; txtToZip; </action></webServiceException></detail></soap:Fault></soap:Body></soap:Envelope>",
+    "rawHeaders": [
+      "Server",
+      "nginx/1.19.1",
+      "Date",
+      "Mon, 15 Feb 2021 19:44:26 GMT",
+      "Content-Type",
+      "text/xml; charset=utf-8",
+      "Content-Length",
+      "699",
+      "Connection",
+      "close",
+      "Cache-Control",
+      "private",
+      "X-AspNet-Version",
+      "4.0.30319",
+      "X-Powered-By",
+      "ASP.NET"
+    ],
+    "responseIsBinary": false
+  }
+]

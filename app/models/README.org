@@ -1,0 +1,13 @@
+* Model Concepts
+
+For this app, a model is a conceptual module with the following specifics:
+
+- Purpose :: A model encapsulates the lowest level information pertaining to a MongoDB collection. No other module in the system will contain this information.
+
+- Scope :: A model only knows about one single collection. It has no knowledge of other collections or modules
+
+- Schema :: We enforce schema for Mongo collections only for the indexed fields. Beyond that, the document format for a collection is determined at the application level and not enforced. Each model may include a comment describing the expected schema but none is enforced. 
+
+- Function :: Each model contains the lowest-level, atomic actions that may be done to a collection: Create, Drop, Get, Put. It is assumed that there is a higher level module above the model layer called "repository". Other actions such as aggregation, association with other models, etc., is done at the repository level. 
+
+The model exports the collection name such that the repository functions may act directly on the collection for higher-order queries. 

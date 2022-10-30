@@ -1,0 +1,33 @@
+[
+  {
+    "scope": "http://127.0.0.1:56650",
+    "method": "get",
+    "path": "/service/v1/verify",
+    "body": "",
+    "status": 200,
+    "response": {
+      "status": "ok"
+    },
+    "rawHeaders": [
+      "X-Powered-By",
+      "Express",
+      "Access-Control-Allow-Origin",
+      "*",
+      "Access-Control-Allow-Headers",
+      "Origin, X-Requested-With, Content-Type, Accept, x-access-token",
+      "Access-Control-Allow-Methods",
+      "GET, POST, PUT, DELETE, OPTIONS",
+      "Content-Type",
+      "application/json; charset=utf-8",
+      "Content-Length",
+      "15",
+      "ETag",
+      "W/\"f-VaSQ4oDUiZblZNAEkkN+sX+q3Sg\"",
+      "Date",
+      "Thu, 01 Apr 2021 14:29:34 GMT",
+      "Connection",
+      "close"
+    ],
+    "responseIsBinary": false
+  }
+]

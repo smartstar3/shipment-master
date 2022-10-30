@@ -1,0 +1,31 @@
+[
+  {
+    "scope": "https://test-onelivex.s3.us-east-2.amazonaws.com:443",
+    "method": "GET",
+    "path": "/transport/fashionnova/FashionNovaOneLiveShipped_202101050730.csv",
+    "body": "",
+    "status": 200,
+    "response": "order_number,tracking_number,shipped_date,carrier_code,ship_to_name,ship_to_addr1,ship_to_addr2,ship_to_addr3,ship_to_city,ship_to_zip,ship_to_country_code,weight_LBS,dimension_LxWxH,trailer_number,seal_number,load_number\n67193335,1LSCYJR0005OMFQ,2021-01-26 17:58:21.210000,LASND,Nathalie Acceus,28250 S Dixie Hwy,509,,Homestead,33033,US,0.65,17x12x3,310779p,1469650,21091\n67304103,1LSCYJR0005R489,2021-01-26 17:58:21.210000,LASND,Gabby Mitchell,509 Whittingham Pl,,,Lake Mary,32746,US,1.37,17x12x3,310779p,1469650,21092\n",
+    "rawHeaders": [
+      "x-amz-id-2",
+      "ronPq97pQ2IK4gvwnrFaK7GR+xT96zH9WrINzxf+0CPe6ZMlNxDFynHBBtim49EjSmP1w6rz/S0=",
+      "x-amz-request-id",
+      "AMKCPJDY0HXGAC1K",
+      "Date",
+      "Wed, 07 Jul 2021 20:44:01 GMT",
+      "Last-Modified",
+      "Fri, 05 Feb 2021 18:43:42 GMT",
+      "ETag",
+      "\"217e2469a401becf08c7b6052b06d834\"",
+      "Accept-Ranges",
+      "bytes",
+      "Content-Type",
+      "text/csv",
+      "Server",
+      "AmazonS3",
+      "Content-Length",
+      "521"
+    ],
+    "responseIsBinary": false
+  }
+]

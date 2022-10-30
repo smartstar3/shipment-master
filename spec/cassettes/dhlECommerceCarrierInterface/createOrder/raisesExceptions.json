@@ -1,0 +1,57 @@
+[
+  {
+    "scope": "https://api-sandbox.dhlecs.com:443",
+    "method": "POST",
+    "path": "/shipping/v4/label?format=ZPL",
+    "body": "{\"pickup\":\"5351358\",\"distributionCenter\":\"USRDU1\",\"orderedProductId\":\"GND\",\"consigneeAddress\":{\"name\":\"James Crow\",\"address1\":\"9600 Escarpment Blvd\",\"address2\":\"#745-259\",\"city\":\"Austin\",\"state\":\"TX\",\"postalCode\":\"78749\",\"country\":\"US\"},\"returnAddress\":{\"companyName\":\"OneLiveX\",\"address1\":\"7000 BURLESON RD\",\"address2\":\"STE A-100\",\"city\":\"AUSTIN\",\"state\":\"TX\",\"postalCode\":\"78744-3214\",\"country\":\"US\",\"phone\":\"512-371-6924\"},\"packageDetail\":{\"packageId\":\"1723015ffd7e-48cb-903a-dc8dac6\",\"packageDescription\":\"Merchandise\",\"packageReference\":\"RDU\",\"weight\":{\"value\":-0.3,\"unitOfMeasure\":\"OZ\"}}}",
+    "status": 400,
+    "response": {
+      "type": "https://api-sandbox.dhlecs.com/docs/errors/400.0204003",
+      "title": "Static Validation Failed",
+      "invalidParams": [
+        {
+          "name": "value",
+          "path": "/packageDetail/weight/value",
+          "reason": "-0.3 is not greater or equal to 0.01"
+        }
+      ]
+    },
+    "rawHeaders": [
+      "Date",
+      "Wed, 27 Jan 2021 23:18:28 GMT",
+      "Content-Type",
+      "application/json",
+      "Content-Length",
+      "220",
+      "Connection",
+      "close",
+      "node-id",
+      "pdJdir9tDnsTKsLNmn9VKN0H1IU4p0Q8",
+      "X-Content-Type-Options",
+      "nosniff",
+      "X-XSS-Protection",
+      "1; mode=block",
+      "Cache-Control",
+      "no-cache, no-store, max-age=0, must-revalidate",
+      "Pragma",
+      "no-cache",
+      "Expires",
+      "0",
+      "Strict-Transport-Security",
+      "max-age=31536000 ; includeSubDomains",
+      "X-Frame-Options",
+      "DENY",
+      "Correlation-Id",
+      "a0ace4b6-3606-4af5-a0fd-6fa794d94958",
+      "Access-Control-Allow-Origin",
+      "*",
+      "Access-Control-Allow-Headers",
+      "Authorization,Accept,Content-Type,X-Requested-With",
+      "Access-Control-Max-Age",
+      "86400",
+      "Access-Control-Allow-Methods",
+      "GET,POST,DELETE,OPTIONS,HEAD"
+    ],
+    "responseIsBinary": false
+  }
+]
